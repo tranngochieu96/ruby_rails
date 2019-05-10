@@ -1,1 +1,4 @@
-#empty
+Hieu:
+name: Ngoc Hieu
+email: tranngochieu.sqtt@gmail.com
+password_digest: <%= User.digest('passowrd') %>

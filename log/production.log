@@ -81,3 +81,28 @@ D, [2019-04-23T12:10:48.434032 #4298] DEBUG -- :   [1m[36mActiveRecord::Intern
 D, [2019-04-23T12:10:48.438478 #4298] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 D, [2019-04-23T12:10:48.439659 #4298] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "production"], ["created_at", "2019-04-23 05:10:48.438863"], ["updated_at", "2019-04-23 05:10:48.438863"]]
 D, [2019-04-23T12:10:48.519792 #4298] DEBUG -- :   [1m[35m (79.9ms)[0m  [1m[36mcommit transaction[0m
+D, [2019-05-08T14:45:27.420284 #15453] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2019-05-08T14:45:27.420421 #15453]  INFO -- : Migrating to CreateMicroposts (20190423155717)
+D, [2019-05-08T14:45:27.421381 #15453] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2019-05-08T14:45:27.422106 #15453] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2019-05-08T14:45:27.422730 #15453] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "microposts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2019-05-08T14:45:27.425302 #15453] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190423155717"]]
+D, [2019-05-08T14:45:27.513744 #15453] DEBUG -- :   [1m[35m (88.1ms)[0m  [1m[36mcommit transaction[0m
+I, [2019-05-08T14:45:27.513983 #15453]  INFO -- : Migrating to CreateUsers (20190423170810)
+D, [2019-05-08T14:45:27.515065 #15453] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2019-05-08T14:45:27.518256 #15453] DEBUG -- :   [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2019-05-08T14:45:27.520351 #15453] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190423170810"]]
+D, [2019-05-08T14:45:27.625560 #15453] DEBUG -- :   [1m[35m (104.8ms)[0m  [1m[36mcommit transaction[0m
+I, [2019-05-08T14:45:27.625786 #15453]  INFO -- : Migrating to AddIndexToUsersEmail (20190503083038)
+D, [2019-05-08T14:45:27.626702 #15453] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2019-05-08T14:45:27.628698 #15453] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+D, [2019-05-08T14:45:27.630045 #15453] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190503083038"]]
+D, [2019-05-08T14:45:27.715326 #15453] DEBUG -- :   [1m[35m (84.9ms)[0m  [1m[36mcommit transaction[0m
+I, [2019-05-08T14:45:27.715653 #15453]  INFO -- : Migrating to AddPasswordDigestToUsers (20190503085012)
+D, [2019-05-08T14:45:27.716897 #15453] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+D, [2019-05-08T14:45:27.718684 #15453] DEBUG -- :   [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+D, [2019-05-08T14:45:27.720501 #15453] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190503085012"]]
+D, [2019-05-08T14:45:27.797299 #15453] DEBUG -- :   [1m[35m (76.4ms)[0m  [1m[36mcommit transaction[0m
+D, [2019-05-08T14:45:27.801187 #15453] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2019-05-08T14:45:27.807939 #15453] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2019-05-08T14:45:27.808646 #15453] DEBUG -- :   [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
