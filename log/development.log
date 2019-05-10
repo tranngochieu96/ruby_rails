@@ -12350,3 +12350,2409 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddRememberDigestToUsers (20190510023457)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" varchar[0m
+  ↳ db/migrate/20190510023457_add_remember_digest_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190510023457"]]
+  ↳ bin/rails:9
+  [1m[35m (119.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-05-10 11:25:13 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/itpm/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (197.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 269ms (Views: 262.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:01:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:01:42 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+    def authenticate(:remember_digest, User.digest?...
+                     ^
+/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+... User.digest?s(remember_token))
+...                              ^):
+  
+app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+app/controllers/users_controller.rb:9:in `new'
+Started GET "/" for ::1 at 2019-05-10 13:01:45 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:01:46 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+    def authenticate(:remember_digest, User.digest?...
+                     ^
+/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+... User.digest?s(remember_token))
+...                              ^):
+  
+app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+app/controllers/users_controller.rb:9:in `new'
+Started GET "/" for ::1 at 2019-05-10 13:01:47 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:01:48 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-05-10 13:01:50 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rpTtI/2aZR42ZihqJaWmKWwjD7CVEHEl9fD56szto0J8yU4b9Uv89M3S0HjOX0Wwe3VJ7YhywJ1gozPZW5c1vg==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+    def authenticate(:remember_digest, User.digest?...
+                     ^
+/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+... User.digest?s(remember_token))
+...                              ^):
+  
+app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/" for ::1 at 2019-05-10 13:01:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:01:54 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+    def authenticate(:remember_digest, User.digest?...
+                     ^
+/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+... User.digest?s(remember_token))
+...                              ^):
+  
+app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+app/controllers/users_controller.rb:9:in `new'
+Started GET "/" for ::1 at 2019-05-10 13:01:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:15:08 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/itpm/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (178.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 267ms (Views: 258.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:15:10 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+    def authenticate(:remember_digest, User.digest?...
+                     ^
+/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+... User.digest?s(remember_token))
+...                              ^):
+  
+app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+app/controllers/users_controller.rb:9:in `new'
+Started GET "/" for ::1 at 2019-05-10 13:15:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:16:10 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:16:15 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:16:17 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+    def authenticate(:remember_digest, User.digest(...
+                     ^
+/home/itpm/ruby_rails/app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+...t, User.digest(remember_token))
+...                              ^):
+  
+app/models/user.rb:28: syntax error, unexpected tSYMBEG, expecting ')'
+app/models/user.rb:28: syntax error, unexpected ')', expecting keyword_end
+app/controllers/users_controller.rb:9:in `new'
+Started GET "/" for ::1 at 2019-05-10 13:16:31 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:18:33 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/itpm/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered users/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 286ms (Views: 269.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-10 13:18:35 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HvoQ+xhQh9mvH8weSRIObBjhnkncXpj0nihnkUx+4vGvuec6LFquqvgwP3nJpPyRnfTaYpRZ8ORg0lojUruMFw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 51.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-10 13:18:38 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CsbzBR4ftlgISj8dUF+6AI0ICvtrWHZY2A0DR4a0nBG7hQTEKhWfK19lzHrQ6Uj9CB1O0CNfHkgm9z71mHHy9w==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:18:41 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-05-10 13:18:41 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WmP3dvTb1tMz+3HhFFSiJanunJDSpqVDyNO7Ym9C/WSIPlRO/ApPOchPifP/rkG8vrjazc/EFPtdgHFR+DhrmA==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:18:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:18:45 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-10 13:18:46 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sszcJFQ0EqrzSaBCB5vRPzI3KpZJuIQuGbIpoY6NpkzlWUpOr/5ZKpkvt7MrsgDYNdnoU/U38Q5lHIZmGwgOhQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 70ms (Views: 61.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:18:57 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:19:14 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-10 13:19:18 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XiF8mlpsQihBw4nyw7t0k+F2rbtCaLg0bd0dBoKlLJQJtOrwoaYJqCulngPvkqV05phvfv7nzRQRc7LBFyCEXQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"create my account"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 56.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:19:21 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:19:35 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:19:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:25:49 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:31:32 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (132.3ms)
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `checkbox' for #<ActionView::Helpers::FormBuilder:0x00007f05ad9078b0>
+Did you mean?  check_box):
+    12: <%= f.password_field :password, class: 'form-control' %>
+    13: 
+    14: <%= f.label :remember_me, class: "checkbox inline" do %>
+    15: <%= f.checkbox :remember_me%>
+    16: <span> Remember to login </span>
+    17: <% end %>
+    18: 
+  
+app/views/sessions/new.html.erb:15:in `block (2 levels) in _app_views_sessions_new_html_erb__11322128449988639_69831182187560'
+app/views/sessions/new.html.erb:14:in `block in _app_views_sessions_new_html_erb__11322128449988639_69831182187560'
+app/views/sessions/new.html.erb:6:in `_app_views_sessions_new_html_erb__11322128449988639_69831182187560'
+Started GET "/login" for ::1 at 2019-05-10 13:32:15 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 1558ms (Views: 1557.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:33:38 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1438ms (Views: 1435.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:34:39 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:36:15 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1316ms (Views: 1314.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:36:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:36:52 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:36:53 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-05-10 13:36:54 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aqpiJlLYNqh9ft9hQrYxZERTXem7a9WmlQcM7TknfNW498EeWgmvQobKJ3OpTNL9UwUbtKYJZB4AVMberl3qKQ==", "session"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 101.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:49:51 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:49:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 13:49:53 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 47.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for ::1 at 2019-05-10 13:50:05 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-05-10 13:50:26 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rpiqy8UJSzfGu9jfPzfQ+91bEK2JgBXoJF4kEibsoIKUxQnzzdjS3T0PIM3UzTNiyg1W8JTipFCxDe4hsZY2fg==", "session"=>{"email"=>"tranngochieu.sqtt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tranngochieu.sqtt@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:34
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:34
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 85ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 13:50:26 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 50.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 13:50:34 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:05:00 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/itpm/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (237.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (16.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 329ms (Views: 320.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:05:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:47:42 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/itpm/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (196.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (14.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 286ms (Views: 278.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 14:47:44 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-10 14:47:46 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YCOcmU2K7n9k6nSZXVNO6/+0ZgW0tcPii4n/sdamIGs3tgrztkCl/w6MY2hxep8M+FqkwAg6tsL3J1B2QyOIog==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 50.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:47:50 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:47:54 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && user.authenticate(par...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+     params[:session][:remember_me] == '...
+     ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 14:48:01 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:03 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:03 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:06 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/help" for ::1 at 2019-05-10 14:48:07 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:09 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:10 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:10 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:12 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:48:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:48:16 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && user.authenticate(par...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+     params[:session][:remember_me] == '...
+     ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/logout" for ::1 at 2019-05-10 14:49:02 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-10 14:49:07 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (14.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:49:09 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && user.authenticate(par...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+     params[:session][:remember_me] == '...
+     ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...[:remember_me] == '1'  remember(?user) : forget(?user)
+...                       ^~~~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/logout" for ::1 at 2019-05-10 14:49:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/l" for ::1 at 2019-05-10 14:49:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/l"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-10 14:49:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:50:02 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (15.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:50:04 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:50:07 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 14:50:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (11.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:50:46 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 14:50:49 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 14:50:50 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-10 14:50:51 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rnn5Z0a3O4qcHm3sZuHeg54zXCjMGOxxURV/lnGDx4IR7G8NvX1wCvZ4eh1KyA9kmd2e7XCXmVEtu9BR5AZvSw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 55.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 14:50:53 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 14:50:54 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 14:50:56 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 14:51:01 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:51:02 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/logout" for ::1 at 2019-05-10 14:53:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-10 14:54:00 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 14:54:02 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 14:54:08 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 55.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 14:54:12 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:54:14 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/1" for ::1 at 2019-05-10 14:54:21 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 14:54:24 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/signup" for ::1 at 2019-05-10 14:54:25 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KVLXIZu5G4SjPkFOaZAZyIuDubds18YG4GstRutXp8B+x0FLYHNQBMlYVr9FucgvjG17ctBYsyacxYKBftIPCQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 60.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for ::1 at 2019-05-10 14:54:29 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:32 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:37 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:38 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:38 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:39 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:40 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 14:54:41 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:54:44 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 14:54:48 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/help" for ::1 at 2019-05-10 14:54:49 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/help" for ::1 at 2019-05-10 14:54:51 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/help" for ::1 at 2019-05-10 14:54:53 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/help" for ::1 at 2019-05-10 14:54:54 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:54:55 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:54:58 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/1" for ::1 at 2019-05-10 14:55:02 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 14:57:35 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:57:37 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 14:59:22 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (13.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 14:59:24 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/logout" for ::1 at 2019-05-10 14:59:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-10 14:59:29 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:22:20 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 15:23:41 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (17.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 106ms (Views: 103.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 15:23:43 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 147ms (Views: 145.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 15:23:47 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:23:50 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 15:25:48 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (13.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 63.1ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:25:50 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...[:remember_me] == '1'  remember(?user) : forget(user)
+...                       ^~~~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~):
+  
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+Started GET "/logout" for ::1 at 2019-05-10 15:25:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-10 15:26:52 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (13.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:26:55 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...[:remember_me] == '1'  remember(user) : forget(user)
+...                       ^~~~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+...er_me] == '1'  remember(user) : forget(user)
+...                              ^):
+  
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+Started GET "/logout" for ::1 at 2019-05-10 15:26:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-10 15:26:59 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:27:03 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...[:remember_me] == '1'  remember(user) : forget(user)
+...                       ^~~~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+...er_me] == '1'  remember(user) : forget(user)
+...                              ^):
+  
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+Started GET "/" for ::1 at 2019-05-10 15:27:18 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (12.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 63.5ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:27:21 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...[:remember_me] == '1'  remember(user) : forget(user)
+...                       ^~~~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+...er_me] == '1'  remember(user) : forget(user)
+...                              ^):
+  
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+Started GET "/" for ::1 at 2019-05-10 15:27:29 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:27:32 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...[:remember_me] == '1'  remember(user) : forget(user)
+...                       ^~~~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+...er_me] == '1'  remember(user) : forget(user)
+...                              ^):
+  
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/sessions_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+Started GET "/l" for ::1 at 2019-05-10 15:28:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/l"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-05-10 15:28:14 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (10.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 60.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:28:17 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 15:32:44 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (15.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:32:46 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 15:32:54 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-05-10 15:35:10 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/itpm/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (189.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (19.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 293ms (Views: 284.6ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:35:12 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 15:35:19 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 15:35:20 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for ::1 at 2019-05-10 15:35:22 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:35:24 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+...emember_me] == '1' ? remember(?user) : forget(?user)
+...                              ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected '?', expecting ')'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2019-05-10 15:35:33 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 15:58:04 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/itpm/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (188.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (14.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 278ms (Views: 270.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-05-10 15:58:07 +0700
+  
+SyntaxError (/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+    ?user = User.find_by(email: pa...
+    ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+    if ?user && ?user.authenticate(pa...
+       ^
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+      params[:session][:remember_me] == '...
+      ^~~~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+    else
+    ^~~~
+/home/itpm/ruby_rails/app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/sessions_controller.rb:7: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:8: syntax error, unexpected '?'
+app/controllers/sessions_controller.rb:10: syntax error, unexpected tIDENTIFIER, expecting ':'
+app/controllers/sessions_controller.rb:12: syntax error, unexpected keyword_else, expecting ':'
+app/controllers/sessions_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/users/1" for ::1 at 2019-05-10 15:59:22 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 15:59:23 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2019-05-10 15:59:24 +0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/help" for ::1 at 2019-05-10 15:59:25 +0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:22
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
